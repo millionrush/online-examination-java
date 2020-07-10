@@ -74,7 +74,7 @@ class SignIn extends JFrame
                                     String query="select * from SignInValues ";
                                        try{
                                                        
-                                                        Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/examination","root","sql");
+                                                        Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/examination","root","root");
                                                         Statement st=con.createStatement();
                                                          ResultSet rs=st.executeQuery(query);
                                                             while(rs.next())
